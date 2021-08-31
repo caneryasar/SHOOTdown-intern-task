@@ -21,6 +21,11 @@ public class SceneLoader : MonoBehaviour {
 
     void Update() {
 
+        if (Input.GetKey("escape")) {
+            
+            Application.Quit();
+        }
+        
         if (ballStatus != null) {
             LoadGameOver();
         }
